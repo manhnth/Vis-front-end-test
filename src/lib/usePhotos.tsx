@@ -15,8 +15,6 @@ export function usePhotos(url: string) {
       .get(url)
       .then<PhotoRes[]>((res) => res.data.data)
       .then((data) => {
-        console.log(data);
-
         if (!ignore) {
           setData(data);
           setIsLoading(false);
