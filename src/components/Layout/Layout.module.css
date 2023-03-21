@@ -1,0 +1,23 @@
+.layout {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .layout {
+    display: flex;
+  }
+
+  .layout > *:nth-child(1) {
+    width: 65px;
+  }
+
+  .layout > *:nth-child(2) {
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .layout > *:nth-child(3) {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,38 @@
+.menu {
+  background-color: #343e4d;
+  display: flex;
+  justify-content: center;
+}
+
+.menuItemBox {
+  width: 6.4rem;
+  height: 6.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.9rem;
+  color: #a1b4c4;
+  cursor: pointer;
+}
+
+.menuItemBox > svg {
+  fill: #a1b4c4;
+}
+
+.itemActive {
+  color: #fcfdfd;
+}
+
+.itemActive > svg {
+  fill: #fcfdfd;
+}
+
+@media screen and (min-width: 600px) {
+  .menu {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
